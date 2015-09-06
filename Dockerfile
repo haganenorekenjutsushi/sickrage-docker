@@ -38,6 +38,7 @@ EXPOSE 8081
 
 # SickRage Configuration
 VOLUME /config
+chown -R nobody:users /config
 
 # Downloads directory
 VOLUME /downloads
