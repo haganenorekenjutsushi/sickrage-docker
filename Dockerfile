@@ -27,8 +27,8 @@ rm -rf !$/.git && \
 chown -R nobody:users /opt/sickrage && \
 
 # Fix SSL errors as per https://github.com/SiCKRAGETV/sickrage-issues/wiki/SSL-Errors
-sudo apt-get install --reinstall build-essential python-pip python-dev libssl-dev libffi-dev
-sudo pip install -U setuptools pip pyasn1 ndg-httpsclient pyopenssl==0.13.1
+sudo apt-get install --reinstall build-essential python-pip python-dev libssl-dev libffi-dev && \
+sudo pip install -U setuptools pip pyasn1 ndg-httpsclient pyopenssl==0.13.1 && \
 
 # clean up
 apt-get clean && \
